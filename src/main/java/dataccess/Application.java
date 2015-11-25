@@ -19,7 +19,7 @@ import javax.annotation.PostConstruct;
 public class Application {
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
-    @Autowired
+    @Autowired(required = false)
     private DatabaseLoader databaseLoader;
 
     @Autowired
